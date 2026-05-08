@@ -18,28 +18,28 @@ const steps = [
     description:
       "Each technique is first demonstrated by the trainer so students clearly understand.",
     icon: PenTool,
-    color: "#9b2335",
+    color: "#7d1a3a",
   },
   {
     title: "Hands-On Practice",
     description:
       "Students practice regularly under trainer supervision to improve skill and confidence.",
     icon: Zap,
-    color: "#b8485a",
+    color: "#7d1a3a",
   },
   {
     title: "Live Model Sessions",
     description:
       "Students work on real models to understand client handling and real-time experience.",
     icon: Users,
-    color: "#c4606e",
+    color: "#7d1a3a",
   },
   {
     title: "Portfolio & Career",
     description:
       "Guidance for portfolio building, freelancing, client communication and career growth.",
     icon: Trophy,
-    color: "#d4848e",
+    color: "#7d1a3a",
   },
 ];
 
