@@ -15,18 +15,16 @@ const FinalCTA = () => {
           >
             <div>
               <h2 className="text-primary text-2xl md:text-5xl font-bold tracking-tighter leading-tight mb-3">
-                Ready to Start Your <br />
+                Ready to Build Your <br />
                 <span className="text-secondary italic font-serif">
-                  Beauty Career?
+                   Feature in Beauty ?
                 </span>
               </h2>
               <p className="text-secondary text-md md:text-lg leading-tight max-w-xl">
-                Join Belleza Beauty School Dehradun and learn professional
-                beauty skills with practical training, expert guidance, live
-                model practice, certification, and career support.
+             Join Belleza Beauty School Bazpur and learn professional beauty skills with practical training, live model practice, certification and career guidance.
               </p>
               <p className="text-primary tracking-tight font-bold mt-4 text-xl">
-                Your passion can become your profession. Start today.
+                Learn today. Practice professionally. Start your career with confidence.
               </p>
             </div>
 
@@ -47,7 +45,7 @@ const FinalCTA = () => {
                 className="px-8 py-2.5 bg-light text-primary border-2 border-primary rounded-full font-bold flex items-center justify-center gap-2 hover:bg-light transition-all"
               >
                 <Phone className="w-5 h-5" />
-                Call Now
+                Request a Call Back
               </motion.button>
             </div>
 
@@ -62,7 +60,7 @@ const FinalCTA = () => {
                     Phone
                   </p>
                   <p className="text-primary font-bold text-lg leading-none">
-                    +91 90123 60088
+                    +91 74099 40088
                   </p>
                 </div>
               </div>
@@ -76,8 +74,7 @@ const FinalCTA = () => {
                     Address
                   </p>
                   <p className="text-secondary font-semibold text-sm leading-relaxed max-w-sm">
-                    Near Fountain Chowk, Nehru Colony, Drone Puri, Dharampur,
-                    Dehradun, Uttarakhand 248001
+                   Bazpur, Uttarakhand
                   </p>
                 </div>
               </div>
@@ -94,24 +91,16 @@ const FinalCTA = () => {
             {/* Geometric Background Element */}
             <div className="absolute -inset-4 border-2 border-accent rounded-[3rem] translate-x-4 translate-y-4 -z-10" />
 
-            <div className="aspect-3/3 overflow-hidden relative group">
+            <div className=" overflow-hidden relative group">
               <img
-                src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=2087&auto=format&fit=crop"
+                src="/assets/images/Gemini_Generated_Image_cq6cy8cq6cy8cq6c.png"
                 alt="Professional Beauty Training"
                 className="w-full h-full object-cover grayscale-20 group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
               />
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-linear-to-t from-primary/60 to-transparent opacity-60" />
 
-              {/* Floating Badge */}
-              <div className="absolute bottom-8 left-8  backdrop-blur-md p-4 rounded-2xl shadow-xl border border-white/20">
-                <p className="text-primary font-bold text-sm">
-                  Enrollment Open
-                </p>
-                <p className="text-secondary text-[10px] font-bold uppercase tracking-tighter">
-                  Dehradun Academy
-                </p>
-              </div>
+              
             </div>
           </motion.div>
         </div>

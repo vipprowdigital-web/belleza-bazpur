@@ -11,7 +11,7 @@ const LeadForm = () => {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="text-3xl sm:text-5xl font-bold mt-5 sm:mt-0 mb-2 sm:mb-4 text-accent tracking-tighter"
           >
-            Get Course Details
+           Start Your Admission Enquiry
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, x: -20 }}
@@ -19,9 +19,7 @@ const LeadForm = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-light/80 text-md leading-relaxed text-accent font-semibold tracking-tight"
           >
-            Fill out the form and our counsellor will contact you with complete
-            course details, batch information, fee details, and admission
-            guidance.
+            Share your details and our team will guide you with suitable courses, batch timing, admission process and career options
           </motion.p>
 
           <div className="mt-3 sm:mt-8 space-y-2">
@@ -68,9 +66,9 @@ const LeadForm = () => {
               </label>
               <select className="w-full px-4 py-3 rounded-xl border border-secondary/20 focus:border-accent outline-none transition-all text-primary bg-light appearance-none">
                 <option>Select a Course</option>
-                <option>Web Development</option>
-                <option>Data Science</option>
-                <option>Digital Marketing</option>
+                <option>Professional Makeup artist</option>
+                <option>Nail Art Basics</option>
+                <option>hair cut</option>
               </select>
             </div>
 

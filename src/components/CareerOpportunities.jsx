@@ -10,32 +10,32 @@ import {
 
 const careerPaths = [
   {
-    title: "Makeup & Bridal",
+    title: "Bridal Makeup Artist",
     roles: ["Professional Makeup Artist", "Bridal Specialist"],
     icon: <Sparkles className="w-5 h-5" />,
   },
   {
-    title: "Hair & Styling",
+    title: "Salon Hair Stylist",
     roles: ["Hair Stylist", "Salon Professional"],
     icon: <Scissors className="w-5 h-5" />,
   },
   {
-    title: "Skin & Nails",
+    title: "Nail Technician",
     roles: ["Nail Technician", "Beauty Therapist"],
     icon: <Briefcase className="w-5 h-5" />,
   },
   {
-    title: "Digital & Creative",
+    title: " Content Creator",
     roles: ["Beauty Content Creator", "Freelance Artist"],
     icon: <Camera className="w-5 h-5" />,
   },
   {
-    title: "Entrepreneurship",
+    title: "Freelance Makeup Artist",
     roles: ["Beauty Business Owner", "Salon Manager"],
     icon: <Store className="w-5 h-5" />,
   },
   {
-    title: "Specialized Roles",
+    title: "Beauty Consultant",
     roles: ["Cosmetologist", "Fashion Stylist"],
     icon: <Globe className="w-5 h-5" />,
   },
@@ -53,9 +53,9 @@ const CareerOpportunities = () => {
             transition={{ duration: 0.8 }}
             className="text-primary text-4xl md:text-5xl font-bold tracking-tight mb-2"
           >
-            Your Career{" "}
+           Start Working{" "}
             <span className="text-secondary italic font-serif">
-              Starts Here
+             After Learning
             </span>
           </motion.h2>
           <motion.p
@@ -64,8 +64,7 @@ const CareerOpportunities = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-secondary tracking-tighter leading-tight font-semibold max-w-2xl mx-auto text-lg"
           >
-            After completing your training from Belleza Beauty School Dehradun,
-            the industry is yours to lead.
+            Beauty is one of the fastest-growing skill-based career fields. After completing your course from Belleza Bazpur, you can explore career options like:
           </motion.p>
         </div>
 
@@ -115,11 +114,11 @@ const CareerOpportunities = () => {
                 Infinite Possibilities
               </h4>
               <p className="text-light text-xl md:text-2xl max-w-xl leading-relaxed tracking-tight">
-                Work in{" "}
+                With the right{" "}
                 <span className="text-accent font-semibold">
-                  bridal studios
+                 skill and confidence,
                 </span>
-                , fashion shoots, events, or start your own{" "}
+                students can create income opportunities through salons, bridal work, events, freelancing and their own business.{" "}
                 <span className="text-accent font-semibold">luxury setup.</span>
               </p>
             </div>

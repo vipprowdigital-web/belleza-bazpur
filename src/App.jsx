@@ -21,11 +21,13 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="flex flex-col justify-center items-center bg-light">
+      
       <HeroSection />
-      <LeadForm />
+      
       <About />
       <WhyChooseUs />
       <ProfessionalCourses />
+      <LeadForm />
       <TrainingTimeline />
       <WhatYouGet />
       <PortfolioSection />
@@ -90,7 +92,7 @@ function App() {
             </div>
 
             <motion.span
-              className="text-xs whitespace-nowrap pr-5 mr-5"
+              className="text-sm whitespace-nowrap pr-5 mr-5"
               variants={{
                 collapsed: { opacity: 0, x: -10 },
                 expanded: { opacity: 1, x: 0 },

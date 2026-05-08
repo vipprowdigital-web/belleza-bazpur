@@ -7,7 +7,7 @@ const AdmissionsCTA = () => {
       {/* Large Background Decorative Text */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none pointer-events-none">
         <h2 className="text-[9.3rem] font-bold text-secondary opacity-20 whitespace-nowrap uppercase tracking-tighter">
-          Dehradun
+          Bazpur
         </h2>
       </div>
 
@@ -33,9 +33,9 @@ const AdmissionsCTA = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-primary text-3xl md:text-5xl font-bold tracking-tighter mb-8 leading-[1.1]"
         >
-          Admissions Open for <br />
+          Admissions Open  <br />
           <span className="text-secondary italic font-serif">
-            Dehradun Branch
+           Start Your Beauty Career Today
           </span>
         </motion.h2>
 
@@ -47,8 +47,7 @@ const AdmissionsCTA = () => {
             transition={{ delay: 0.1 }}
             className="text-primary tracking-tighter text-xl md:text-2xl font-medium leading-relaxed max-w-3xl mx-auto"
           >
-            Take your first step toward a professional beauty career with
-            Belleza Beauty School Dehradun.
+           Your talent needs the right training to become professional. Join Belleza Beauty School Bazpur and learn skills that can help you build a confident future in the beauty industry.
           </motion.p>
 
           <motion.p
@@ -57,8 +56,7 @@ const AdmissionsCTA = () => {
             transition={{ delay: 0.2 }}
             className="text-secondary tracking-tight font-semibold text-lg leading-relaxed max-w-2xl mx-auto"
           >
-            Learn from expert trainers, practice on live models, build your
-            portfolio, and get certified with career-focused training.
+            Limited seats available for new batches.
           </motion.p>
         </div>
 
@@ -74,7 +72,7 @@ const AdmissionsCTA = () => {
             whileTap={{ scale: 0.95 }}
             className="w-full sm:w-auto px-10 py-3 bg-primary text-light rounded-full font-semibold tracking-tight text-md shadow-2xl shadow-primary flex items-center justify-center gap-2 group transition-all duration-300 hover:bg-secondary"
           >
-            Apply Now
+            Apply  for Admission
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </motion.button>
 
@@ -84,7 +82,7 @@ const AdmissionsCTA = () => {
             className="w-full sm:w-auto px-10 py-3 bg-accent text-primary border-2 border-secondary rounded-full font-semibold tracking-tight text-md flex items-center justify-center gap-2 transition-all duration-300 hover:bg-light"
           >
             <MessageCircle className="w-5 h-5" />
-            Get Course Details
+           Call for Course Details
           </motion.button>
         </motion.div>
       </div>
