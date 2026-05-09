@@ -17,7 +17,7 @@ const FinalCTA = () => {
               <h2 className="text-primary text-2xl md:text-5xl font-bold tracking-tighter leading-tight mb-3">
                 Ready to Build Your <br />
                 <span className="text-secondary italic font-serif">
-                   Feature in Beauty ?
+                   Future in Beauty ?
                 </span>
               </h2>
               <p className="text-secondary text-md md:text-lg leading-tight max-w-xl">
