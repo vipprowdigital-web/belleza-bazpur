@@ -9,7 +9,7 @@ const portfolioImages = [
     text: "Practice professional bridal looks with proper finishing, detailing and styling.",
   },
   {
-    image: "/assets/images/Gemini_Generated_Image_p5lezrp5lezrp5le.png",
+    image: "/assets/images/photo/WhatsApp Image 2026-05-13 at 4.24.08 PM.jpeg",
     title: "Creative Makeup Work",
     text: "Build confidence by creating unique beauty looks during practical sessions.",
   },
@@ -43,7 +43,7 @@ const PortfolioSection = () => {
 
   return (
     <section
-      className="relative w-full py-24 px-6 bg-light overflow-hidden flex flex-col items-center justify-center text-center"
+      className="relative w-full py-24 sm:py-16 px-6 bg-light overflow-hidden flex flex-col items-center justify-center text-center"
       id="portfolio"
     >
       {/* Decorative Background Elements */}
@@ -83,7 +83,7 @@ const PortfolioSection = () => {
           className="text-primary text-3xl md:text-5xl font-bold tracking-tighter mb-8 leading-[1.1]"
         >
           Create Work <br />
-          <span className="text-secondary italic font-serif">
+          <span className="text-secondary normal font-serif">
             That You Can Show Proudly
           </span>
         </motion.h2>
@@ -214,7 +214,7 @@ export default PortfolioSection;
 //           className="text-primary text-3xl md:text-5xl font-bold tracking-tighter mb-8 leading-[1.1]"
 //         >
 //           Create Work  <br />
-//           <span className="text-secondary italic font-serif">
+//           <span className="text-secondary normal font-serif">
 //             That You Can Show Proudly
 //           </span>
 //         </motion.h2>

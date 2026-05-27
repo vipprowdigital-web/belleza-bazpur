@@ -1,38 +1,75 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
-const testimonials = [
+const fallbackTestimonials = [
   {
     name: "Priya Sharma",
-    course: "Makeup Student",
-    image: "/assets/images/side/images.png",
-    text: "Belleza made learning easy for me. I started as a beginner, but regular practice and trainer guidance helped me gain confidence.",
+    designation: "Makeup Student",
+    avatar: "/assets/images/side/images.png",
+    description:
+      "Belleza made learning easy for me. I started as a beginner, but regular practice and trainer guidance helped me gain confidence.",
   },
   {
     name: "Anjali Verma",
-    course: "Hair & Makeup Student",
-    image: "/assets/images/side/images.png",
-    text: "The best part is practical training. We don’t just watch demos; we practice and learn how to improve our work.",
+    designation: "Hair & Makeup Student",
+    avatar: "/assets/images/side/images.png",
+    description:
+      "The best part is practical training. We don’t just watch demos; we practice and learn how to improve our work.",
   },
   {
     name: "Neha Rawat",
-    course: "Beauty & Skin Student",
-    image: "/assets/images/side/images.png",
-    text: "I wanted to start freelancing, and Belleza helped me understand not only makeup but also client handling and portfolio building.",
+    designation: "Beauty & Skin Student",
+    avatar: "/assets/images/side/images.png",
+    description:
+      "I wanted to start freelancing, and Belleza helped me understand not only makeup but also client handling and portfolio building.",
   },
 ];
 
 const StudentExperience = () => {
+  const API_URL = import.meta.env.VITE_API_URL;
+
   const [activeIndex, setActiveIndex] = useState(0);
+  const [testimonials, setTestimonials] = useState(fallbackTestimonials);
+
+  useEffect(() => {
+    const fetchTestimonials = async () => {
+      try {
+        console.log("Testimonial API URL:", API_URL);
+
+        const response = await fetch(
+          `${API_URL}/testimonial/public?limit=10`
+        );
+
+        const data = await response.json();
+
+        console.log("Testimonial response:", data);
+
+        if (response.ok && Array.isArray(data?.data) && data.data.length > 0) {
+          setTestimonials(data.data);
+          setActiveIndex(0);
+        }
+      } catch (error) {
+        console.log("Testimonial fetch error:", error);
+      }
+    };
+
+    fetchTestimonials();
+  }, [API_URL]);
 
   const nextTestimonial = () => {
-    setActiveIndex((prev) => (prev + 1) % testimonials.length);
+    if (testimonials.length === 0) return;
+
+    setActiveIndex((prev) =>
+      prev === testimonials.length - 1 ? 0 : prev + 1
+    );
   };
 
   const prevTestimonial = () => {
-    setActiveIndex(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+    if (testimonials.length === 0) return;
+
+    setActiveIndex((prev) =>
+      prev === 0 ? testimonials.length - 1 : prev - 1
     );
   };
 
@@ -61,7 +98,9 @@ const StudentExperience = () => {
           className="text-primary text-3xl md:text-5xl font-bold tracking-tight mb-14"
         >
           What Our{" "}
-          <span className="text-secondary italic font-serif">Students Say</span>
+          <span className="text-secondary normal font-serif">
+            Students Say
+          </span>
         </motion.h2>
 
         {/* Testimonial Box */}
@@ -86,7 +125,7 @@ const StudentExperience = () => {
 
           <AnimatePresence mode="wait">
             <motion.div
-              key={activeIndex}
+              key={active?._id || activeIndex}
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -18 }}
@@ -100,9 +139,12 @@ const StudentExperience = () => {
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-primary/80 text-lg md:text-2xl italic leading-relaxed font-medium mb-8">
-                {active.text}
-              </p>
+              <div
+                className="text-primary/80 text-lg md:text-2xl normal leading-relaxed font-medium mb-8 [&_p]:mb-0 [&_strong]:font-bold [&_em]:not-italic"
+                dangerouslySetInnerHTML={{
+                  __html: active?.description || "",
+                }}
+              />
 
               {/* Divider */}
               <div className="w-24 h-[2px] bg-secondary/30 mx-auto mb-8" />
@@ -110,19 +152,19 @@ const StudentExperience = () => {
               {/* Student Image */}
               <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 border-4 border-light shadow-lg">
                 <img
-                  src={active.image}
-                  alt={active.name}
+                  src={active?.avatar || "/assets/images/side/images.png"}
+                  alt={active?.name || "Student"}
                   className="w-full h-full object-cover"
                 />
               </div>
 
               {/* Name */}
               <h3 className="text-primary text-xl font-bold mb-1">
-                {active.name}
+                {active?.name || "Belleza Student"}
               </h3>
 
               <p className="text-secondary text-sm font-semibold">
-                {active.course}
+                {active?.designation || active?.course || "Beauty Student"}
               </p>
             </motion.div>
           </AnimatePresence>
@@ -205,7 +247,7 @@ export default StudentExperience;
 //           </motion.div>
 //           <h2 className="text-light text-3xl md:text-5xl font-bold tracking-tight">
 //             Voices of{" "}
-//             <span className="italic font-serif text-accent">Confidence</span>
+//             <span className="normal font-serif text-accent">Confidence</span>
 //           </h2>
 //         </div>
 
@@ -224,7 +266,7 @@ export default StudentExperience;
 //               transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
 //               className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 md:px-20"
 //             >
-//               <p className="text-light text-md md:text-xl font-medium leading-relaxed mb-8 italic">
+//               <p className="text-light text-md md:text-xl font-medium leading-relaxed mb-8 normal">
 //                 "{testimonials[index].text}"
 //               </p>
 

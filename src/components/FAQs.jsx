@@ -92,7 +92,7 @@ const FAQs = () => {
   const rightFaqs = faqs.slice(3, 6);
 
   return (
-    <section className="py-24 px-6 bg-light" id="faqs">
+    <section className="py-10 px-6 bg-light" id="faqs">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-14 text-center">
@@ -114,7 +114,7 @@ const FAQs = () => {
             className="text-primary text-3xl md:text-5xl font-bold mt-3 tracking-tight"
           >
             Frequently Asked{" "}
-            <span className="text-secondary italic font-serif">Questions</span>
+            <span className="text-secondary normal font-serif">Questions</span>
           </motion.h2>
         </div>
 
@@ -280,7 +280,7 @@ export default FAQs;
 //             className="text-primary text-2xl md:text-4xl font-bold mt-2 tracking-tight"
 //           >
 //             Frequently Asked{" "}
-//             <span className="text-secondary italic font-serif">Questions</span>
+//             <span className="text-secondary normal font-serif">Questions</span>
 //           </motion.h2>
 //         </div>
 

@@ -3,13 +3,14 @@ import { ArrowRight, MessageCircle } from "lucide-react";
 
 const AdmissionsCTA = () => {
   return (
-    <section className="relative py-24 px-6 bg-light overflow-hidden flex flex-col items-center justify-center">
+    <section className="relative py-10 px-6 bg-light overflow-hidden flex flex-col items-center justify-center">
       {/* Large Background Decorative Text */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none pointer-events-none">
-        <h2 className="text-[9.3rem] font-bold text-secondary opacity-20 whitespace-nowrap uppercase tracking-tighter">
-          Bazpur
-        </h2>
-      </div>
+   {/* Large Background Decorative Text */}
+<div className="absolute inset-0 flex items-center justify-center select-none pointer-events-none overflow-hidden">
+  <h2 className="text-[4.6rem] sm:text-[6.5rem] md:text-[9.3rem] font-bold text-secondary opacity-20 whitespace-nowrap uppercase tracking-tighter text-center leading-none">
+    Bazpur
+  </h2>
+</div>
 
       <div className="relative z-10 max-w-4xl text-center">
         {/* Animated Badge */}
@@ -34,7 +35,7 @@ const AdmissionsCTA = () => {
           className="text-primary text-3xl md:text-5xl font-bold tracking-tighter mb-8 leading-[1.1]"
         >
           Admissions Open  <br />
-          <span className="text-secondary italic font-serif">
+          <span className="text-secondary normal font-serif">
            Start Your Beauty Career Today
           </span>
         </motion.h2>

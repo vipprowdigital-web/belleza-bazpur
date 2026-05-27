@@ -23,13 +23,12 @@ export default function HeroSection() {
   return (
     <section
       className="w-full min-h-screen flex flex-col overflow-hidden pt-[86px] md:pt-[92px]"
-      style={{ background: WHITE, fontFamily: "'Jost', sans-serif" }}
+      style={{ background: WHITE, fontFamily: "'Montserrat', sans-serif" }}
     >
       {/* Hero Main Section */}
       <div className="flex-1 flex items-center justify-center px-5 md:px-10 py-8 md:py-10">
         <div className="w-full max-w-[1400px] grid grid-cols-1 md:grid-cols-3 items-center gap-8 md:gap-10">
-          
-          {/* Left Image - Mobile me pehle aayegi */}
+          {/* Left Image */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -44,14 +43,14 @@ export default function HeroSection() {
               }}
             >
               <img
-                src="/assets/images/Gemini_Generated_Image_p5lezrp5lezrp5le.png"
-                alt=""
+                src="/assets/images/photo/IMG_3051.JPG.jpeg"
+                alt="Belleza Beauty School Training"
                 className="w-full h-full object-cover"
               />
             </div>
           </motion.div>
 
-          {/* Center Content - Mobile me image ke baad aayega */}
+          {/* Center Content */}
           <motion.div
             className="order-2 md:order-2 flex flex-col items-center text-center"
             variants={container}
@@ -61,7 +60,11 @@ export default function HeroSection() {
             <motion.p
               variants={fadeUp}
               className="text-[10px] tracking-[3px] uppercase mb-3"
-              style={{ color: "#b06070", fontWeight: 400 }}
+              style={{
+                color: "#b06070",
+                fontWeight: 500,
+                fontFamily: "'Montserrat', sans-serif",
+              }}
             >
               Empowering Your Passion
             </motion.p>
@@ -70,7 +73,7 @@ export default function HeroSection() {
               variants={fadeUp}
               className="font-light uppercase leading-[1.15] tracking-[2px] mb-4"
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "'Montserrat', sans-serif",
                 color: MAROON,
                 fontSize: "clamp(30px, 5vw, 58px)",
               }}
@@ -79,9 +82,10 @@ export default function HeroSection() {
               <br />
               <em
                 style={{
-                  fontStyle: "italic",
+                  fontStyle: "normal",
                   fontWeight: 400,
                   color: "#5a1228",
+                  fontFamily: "'Montserrat', sans-serif",
                 }}
               >
                 Beauty Professional
@@ -93,10 +97,13 @@ export default function HeroSection() {
             <motion.p
               variants={fadeUp}
               className="max-w-md text-[13px] md:text-[14px] tracking-[0.4px] leading-[1.9] font-light mb-6"
-              style={{ color: "#9a6a6a" }}
+              style={{
+                color: "#9a6a6a",
+                fontFamily: "'Montserrat', sans-serif",
+              }}
             >
               Learn professional{" "}
-              <span style={{ fontWeight: 500, color: MAROON }}>
+              <span style={{ fontWeight: 600, color: MAROON }}>
                 Makeup, Hair, Nail, Skin &amp; Cosmetology
               </span>{" "}
               with practical training, live model practice &amp; expert guidance.
@@ -114,7 +121,7 @@ export default function HeroSection() {
                 style={{
                   background: MAROON,
                   color: CREAM,
-                  fontFamily: "'Jost', sans-serif",
+                  fontFamily: "'Montserrat', sans-serif",
                   border: "none",
                   cursor: "pointer",
                 }}
@@ -137,7 +144,7 @@ export default function HeroSection() {
                   border: `1.5px solid ${MAROON}`,
                   color: MAROON,
                   background: "transparent",
-                  fontFamily: "'Jost', sans-serif",
+                  fontFamily: "'Montserrat', sans-serif",
                   cursor: "pointer",
                 }}
               >
@@ -154,7 +161,11 @@ export default function HeroSection() {
                   <span
                     key={f}
                     className="flex items-center gap-2 text-[11px] tracking-[1px]"
-                    style={{ color: MAROON, fontWeight: 400 }}
+                    style={{
+                      color: MAROON,
+                      fontWeight: 500,
+                      fontFamily: "'Montserrat', sans-serif",
+                    }}
                   >
                     <span
                       className="w-[5px] h-[5px] rounded-full flex-shrink-0"
@@ -167,7 +178,7 @@ export default function HeroSection() {
             </motion.div>
           </motion.div>
 
-          {/* Right Image - Mobile me content ke baad aayegi */}
+          {/* Right Image */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -182,8 +193,8 @@ export default function HeroSection() {
               }}
             >
               <img
-                src="/assets/images/side/ChatGPT Image May 8, 2026, 11_12_47 AM.png"
-                alt=""
+                src="/assets/images/photo/IMG_3055.JPG.jpeg"
+                alt="Belleza Beauty School Student"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -260,7 +271,7 @@ export default function HeroSection() {
 //           className="text-right text-md max-w-lg sm:max-w-xl leading-tight tracking-tight text-accent font-semibold"
 //         >
 //           Learn professional{" "}
-//           <span className="font-bold italic">
+//           <span className="font-bold normal">
 //             Makeup, Hair, Nail, Skin & Cosmetology
 //           </span>{" "}
 //           with practical training, live model practice, expert guidance, and

@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 const MAROON = "#7d1a3a";
@@ -21,16 +20,26 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          style={{ position: "relative", overflow: "visible", minHeight: "520px", height: "100%" }}
+          style={{
+            position: "relative",
+            overflow: "visible",
+            minHeight: "520px",
+            height: "100%",
+          }}
         >
           {/* Diagonal clip — only on image */}
-          <div style={{
-            position: "absolute",
-            top: 0, left: 0, right: 0, bottom: 0,
-            clipPath: "polygon(0 0, 100% 0, 85% 100%, 0 100%)",
-            background: "#e8d0c0",
-            overflow: "hidden",
-          }}>
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              clipPath: "polygon(0 0, 100% 0, 85% 100%, 0 100%)",
+              background: "#e8d0c0",
+              overflow: "hidden",
+            }}
+          >
             <img
               src="/assets/images/side/5.png"
               alt="Belleza Beauty School Training"
@@ -63,24 +72,30 @@ export default function About() {
               boxShadow: "0 4px 20px rgba(125,26,58,0.08)",
             }}
           >
-            <p style={{
-              fontFamily: "'Cormorant Garamond', serif",
-              fontSize: "34px",
-              fontWeight: 700,
-              color: MAROON,
-              lineHeight: 1,
-            }}>
+            <p
+              style={{
+                fontFamily: "'Montserrat', serif",
+                fontSize: "34px",
+                fontWeight: 700,
+                color: MAROON,
+                lineHeight: 1,
+              }}
+            >
               100%
             </p>
-            <p style={{
-              fontSize: "11px",
-              color: "#b89090",
-              letterSpacing: "1.5px",
-              textTransform: "uppercase",
-              marginTop: "8px",
-              lineHeight: 1.6,
-            }}>
-              Practical<br />Training
+            <p
+              style={{
+                fontSize: "11px",
+                color: "#b89090",
+                letterSpacing: "1.5px",
+                textTransform: "uppercase",
+                marginTop: "8px",
+                lineHeight: 1.6,
+              }}
+            >
+              Practical
+              <br />
+              Training
             </p>
           </motion.div>
         </motion.div>
@@ -101,64 +116,84 @@ export default function About() {
           }}
         >
           {/* Eyebrow */}
-          <p style={{
-            fontSize: "11px",
-            letterSpacing: "3px",
-            textTransform: "uppercase",
-            color: "#b06070",
-            fontWeight: 500,
-          }}>
+          <p
+            style={{
+              fontSize: "11px",
+              letterSpacing: "3px",
+              textTransform: "uppercase",
+              color: "#b06070",
+              fontWeight: 500,
+            }}
+          >
             Empowering Your Passion
           </p>
 
           {/* Divider */}
-          <div style={{
-            width: "40px",
-            height: "2px",
-            background: MAROON,
-            borderRadius: "2px",
-          }} />
+          <div
+            style={{
+              width: "40px",
+              height: "2px",
+              background: MAROON,
+              borderRadius: "2px",
+            }}
+          />
 
           {/* Title */}
-          <h2 style={{
-            fontFamily: "'Cormorant Garamond', serif",
-            fontSize: "clamp(30px, 3.2vw, 44px)",
-            fontWeight: 700,
-            color: MAROON,
-            lineHeight: 1.2,
-            letterSpacing: "-0.3px",
-          }}>
+          <h2
+            style={{
+              fontFamily: "'Montserrat', serif",
+              fontSize: "clamp(30px, 3.2vw, 44px)",
+              fontWeight: 700,
+              color: MAROON,
+              lineHeight: 1.2,
+              letterSpacing: "-0.3px",
+            }}
+          >
             About{" "}
-            <em style={{ fontStyle: "italic", color: "#5a1228" }}>
+            <em style={{ fontStyle: "normal", color: "#5a1228" }}>
               Belleza Beauty School
             </em>{" "}
             Bazpur
           </h2>
 
           {/* Paragraphs */}
-          <p style={{ fontSize: "14px", color: "#888888", lineHeight: 1.9, fontWeight: 300 }}>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#888888",
+              lineHeight: 1.9,
+              fontWeight: 300,
+            }}
+          >
             Belleza Beauty School Bazpur is a{" "}
-            <strong style={{ color: MAROON, fontWeight: 500, fontStyle: "italic" }}>
+            <strong
+              style={{ color: MAROON, fontWeight: 500, fontStyle: "normal" }}
+            >
               premium beauty academy
             </strong>{" "}
-            designed for students who want to build a successful career in the beauty industry.
+            designed for students who want to build a successful career in the
+            beauty industry.
           </p>
 
-          <p style={{ fontSize: "14px", color: "#888888", lineHeight: 1.9, fontWeight: 300 }}>
-            We provide professional training in makeup, hair, nails, skin, beauty and cosmetology
-            through a practical, career-focused learning approach.
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#888888",
+              lineHeight: 1.9,
+              fontWeight: 300,
+            }}
+          >
+            We provide professional training in makeup, hair, nails, skin,
+            beauty and cosmetology through a practical, career-focused learning
+            approach.
           </p>
 
           {/* Stat Cards */}
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "14px",
-            marginTop: "6px",
-          }}>
+          {/* Stat Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
             {[
               { icon: "★", title: "Advanced Level", sub: "From Basic to Pro" },
-              { icon: "✦", title: "Live Models",    sub: "Hands-on Practice" },
+              { icon: "✦", title: "Live Models", sub: "Hands-on Practice" },
             ].map(({ icon, title, sub }, i) => (
               <motion.div
                 key={title}
@@ -166,36 +201,42 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 + i * 0.1 }}
-                style={{
-                  border: "1px solid #f0e4d8",
-                  borderRadius: "12px",
-                  padding: "18px 20px",
-                  background: "#ffffff",
-                }}
+                className="w-50 border border-[#f0e4d8] rounded-xl bg-white p-5"
               >
-                <div style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
-                  marginBottom: "8px",
-                }}>
-                  <div style={{
-                    width: "30px",
-                    height: "30px",
-                    borderRadius: "8px",
-                    background: "#f5e8d8",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: MAROON,
-                    fontSize: "14px",
-                    flexShrink: 0,
-                  }}>
+                <div className="flex items-center gap-3 mb-3">
+                  <div
+                    className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
+                    style={{
+                      background: "#f5e8d8",
+                      color: MAROON,
+                      fontSize: "14px",
+                    }}
+                  >
                     {icon}
                   </div>
-                  <p style={{ fontSize: "14px", fontWeight: 600, color: MAROON }}>{title}</p>
+
+                  <p
+                    className="m-0 leading-tight"
+                    style={{
+                      fontSize: "14px",
+                      fontWeight: 600,
+                      color: MAROON,
+                    }}
+                  >
+                    {title}
+                  </p>
                 </div>
-                <p style={{ fontSize: "12px", color: "#b89090", paddingLeft: "40px" }}>{sub}</p>
+
+                <p
+                  className="m-0 leading-relaxed"
+                  style={{
+                    fontSize: "12px",
+                    color: "#b89090",
+                    paddingLeft: "48px",
+                  }}
+                >
+                  {sub}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -218,53 +259,63 @@ export default function About() {
           gap: "20px",
         }}
       >
-        <div style={{
-          alignSelf: "flex-start",
-          marginLeft: "clamp(16px, 8vw, 80px)",
-          fontFamily: "'Cormorant Garamond', serif",
-          fontSize: "90px",
-          color: "#f5e8d8",
-          lineHeight: "0.6",
-          opacity: 0.45,
-        }}>
+        <div
+          style={{
+            alignSelf: "flex-start",
+            marginLeft: "clamp(16px, 8vw, 80px)",
+            fontFamily: "'Montserrat', serif",
+            fontSize: "90px",
+            color: "#f5e8d8",
+            lineHeight: "0.6",
+            opacity: 0.45,
+          }}
+        >
           &ldquo;
         </div>
 
-        <p style={{
-          fontFamily: "'Cormorant Garamond', serif",
-          fontSize: "clamp(22px, 3vw, 34px)",
-          color: "#f5e8d8",
-          lineHeight: 1.65,
-          fontWeight: 400,
-          maxWidth: "700px",
-        }}>
+        <p
+          style={{
+            fontFamily: "'Montserrat', serif",
+            fontSize: "clamp(22px, 3vw, 34px)",
+            color: "#f5e8d8",
+            lineHeight: 1.65,
+            fontWeight: 400,
+            maxWidth: "700px",
+          }}
+        >
           At Belleza, students don't just learn techniques —<br />
           they learn how to work confidently in the{" "}
-          <em style={{ fontStyle: "italic", color: "#f0c8a0" }}>
+          <em style={{ fontStyle: "normal", color: "#f0c8a0" }}>
             real beauty industry.
           </em>
         </p>
 
-        <div style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "12px",
-          marginTop: "8px",
-        }}>
-          <span style={{
-            width: "8px",
-            height: "8px",
-            borderRadius: "50%",
-            background: "#f0c8a0",
-            flexShrink: 0,
-          }} />
-          <span style={{
-            fontSize: "11px",
-            letterSpacing: "3px",
-            textTransform: "uppercase",
-            color: "#f0c8a0",
-            fontWeight: 500,
-          }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "12px",
+            marginTop: "8px",
+          }}
+        >
+          <span
+            style={{
+              width: "8px",
+              height: "8px",
+              borderRadius: "50%",
+              background: "#f0c8a0",
+              flexShrink: 0,
+            }}
+          />
+          <span
+            style={{
+              fontSize: "11px",
+              letterSpacing: "3px",
+              textTransform: "uppercase",
+              color: "#f0c8a0",
+              fontWeight: 500,
+            }}
+          >
             Empowering Professionals
           </span>
         </div>
@@ -323,7 +374,7 @@ export default function About() {
 //                 </h4>
 //                 <h2 className="font-bold tracking-tighter text-primary text-4xl md:text-5xl leading-tight">
 //                   About{" "}
-//                   <span className="text-secondary italic">
+//                   <span className="text-secondary normal">
 //                     Belleza Beauty School
 //                   </span>{" "}
 //                  Bazpur
@@ -339,7 +390,7 @@ export default function About() {
 //               >
 //                 <p>
 //                   Belleza Beauty School Bazpur is a{" "}
-//                   <span className="text-primary font-semibold italic">
+//                   <span className="text-primary font-semibold normal">
 //                     premium beauty academy
 //                   </span>{" "}
 //                   designed for students who want to build a successful career in
@@ -397,7 +448,7 @@ export default function About() {
 //           At Belleza, students don’t just learn techniques —
 //           <br />
 //           they learn how to work confidently in the{" "}
-//           <span className="text-secondary font-serif italic">
+//           <span className="text-secondary font-serif normal">
 //             {" "}
 //             real beauty industry.
 //           </span>

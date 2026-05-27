@@ -43,7 +43,7 @@ const careerPaths = [
 
 const CareerOpportunities = () => {
   return (
-    <section className="py-24 px-6 bg-light" id="career">
+    <section className="py-10 px-6 bg-light" id="career">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -54,7 +54,7 @@ const CareerOpportunities = () => {
             className="text-primary text-4xl md:text-5xl font-bold tracking-tight mb-2"
           >
            Start Working{" "}
-            <span className="text-secondary italic font-serif">
+            <span className="text-secondary normal font-serif">
              After Learning
             </span>
           </motion.h2>

@@ -46,7 +46,7 @@ const steps = [
 const TrainingTimeline = () => {
   return (
     <section
-      className="w-full py-24 px-6 overflow-hidden"
+      className="w-full sm:py-16 px-6 overflow-hidden"
       style={{ background: "#ffffff" }}
       id="training"
     >
@@ -74,7 +74,7 @@ const TrainingTimeline = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "'Montserrat', serif",
               fontSize: "clamp(30px, 4vw, 48px)",
               fontWeight: 700,
               color: MAROON,
@@ -83,7 +83,7 @@ const TrainingTimeline = () => {
             }}
           >
             How We{" "}
-            <em style={{ fontStyle: "italic", color: "#5a1228" }}>Train</em>{" "}
+            <em style={{ fontStyle: "normal", color: "#5a1228" }}>Train</em>{" "}
             Our Students
           </motion.h2>
 
@@ -453,7 +453,7 @@ export default TrainingTimeline;
 //             viewport={{ once: true }}
 //             transition={{ delay: 0.1 }}
 //             style={{
-//               fontFamily: "'Cormorant Garamond', serif",
+//               fontFamily: "'Montserrat', serif",
 //               fontSize: "clamp(30px, 4vw, 48px)",
 //               fontWeight: 700,
 //               color: MAROON,
@@ -462,7 +462,7 @@ export default TrainingTimeline;
 //             }}
 //           >
 //             How We{" "}
-//             <em style={{ fontStyle: "italic", color: "#5a1228" }}>Train</em>{" "}
+//             <em style={{ fontStyle: "normal", color: "#5a1228" }}>Train</em>{" "}
 //             Our Students
 //           </motion.h2>
 //           <div style={{
@@ -562,7 +562,7 @@ export default TrainingTimeline;
 //                 justifyContent: "center",
 //               }}>
 //                 <p style={{
-//                   fontFamily: "'Cormorant Garamond', serif",
+//                   fontFamily: "'Montserrat', serif",
 //                   fontSize: "13px",
 //                   fontWeight: 700,
 //                   color: MAROON,
@@ -570,7 +570,7 @@ export default TrainingTimeline;
 //                   textAlign: "center",
 //                 }}>
 //                   Belleza<br />
-//                   <em style={{ fontStyle: "italic", fontSize: "11px" }}>Training</em>
+//                   <em style={{ fontStyle: "normal", fontSize: "11px" }}>Training</em>
 //                 </p>
 //               </div>
 //             </div>
@@ -838,7 +838,7 @@ export default TrainingTimeline;
 //         <div className="text-center mb-20">
 //           <h2 className="text-primary text-4xl md:text-5xl font-bold tracking-tight">
 //             How We{" "}
-//             <span className="text-secondary italic font-serif">Train</span> Our
+//             <span className="text-secondary normal font-serif">Train</span> Our
 //             Students
 //           </h2>
 //         </div>

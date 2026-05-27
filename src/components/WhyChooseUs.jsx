@@ -77,7 +77,7 @@ const WhyChooseUs = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.7 }}
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "'Montserrat', serif",
               fontSize: "clamp(32px, 4vw, 48px)",
               fontWeight: 700,
               color: MAROON,
@@ -87,7 +87,7 @@ const WhyChooseUs = () => {
             }}
           >
             The Belleza{" "}
-            <em style={{ fontStyle: "italic", color: "#5a1228" }}>Advantage</em>
+            <em style={{ fontStyle: "normal", color: "#5a1228" }}>Advantage</em>
           </motion.h2>
 
           <div style={{
@@ -252,7 +252,7 @@ export default WhyChooseUs;
 //             className="text-primary text-4xl md:text-5xl font-bold mt-4 tracking-tight"
 //           >
 //             The Belleza{" "}
-//             <span className="italic font-serif text-secondary">Advantage</span>
+//             <span className="normal font-serif text-secondary">Advantage</span>
 //           </motion.h2>
 //           <div className="w-24 h-1 bg-secondary mx-auto mt-6 rounded-full opacity-50" />
 //         </div>

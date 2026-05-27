@@ -52,7 +52,7 @@ const EligibilitySection = () => {
             className="text-primary text-4xl md:text-5xl font-bold tracking-tight mb-4"
           >
             Who Can Join{" "}
-            <span className="text-secondary italic font-serif">
+            <span className="text-secondary normal font-serif">
               Belleza Beauty School?
             </span>
           </motion.h2>
@@ -102,7 +102,7 @@ const EligibilitySection = () => {
           transition={{ delay: 0.8 }}
           className="mt-16 text-center max-w-2xl mx-auto"
         >
-          <p className="text-secondary font-bold text-lg leading-relaxed italic">
+          <p className="text-secondary font-bold text-lg leading-relaxed normal">
             "No previous experience is required. You can start from basic level
             and grow step by step."
           </p>

@@ -5,7 +5,7 @@ import LeadForm from "./components/LeadForm";
 import { motion } from "framer-motion";
 import { MapPin, Phone } from "lucide-react";
 import WhyChooseUs from "./components/WhyChooseUs";
-import ProfessionalCourses from "./components/ProfessionalCourses";
+
 import TrainingTimeline from "./components/TrainingTimeline";
 import WhatYouGet from "./components/WhatYouGet";
 import PortfolioSection from "./components/PortfolioSection";
@@ -17,18 +17,19 @@ import FAQs from "./components/FAQs";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Courses from "./components/Courses";
 
 function App() {
   return (
     <div className="flex flex-col justify-center items-center bg-light">
-      
       <HeroSection />
-      
-      <About />
-      <WhyChooseUs />
-      <ProfessionalCourses />
       <LeadForm />
+      <Courses />
       <TrainingTimeline />
+      <About />
+
+      <WhyChooseUs />
+
       <WhatYouGet />
       <PortfolioSection />
       <CareerOpportunities />

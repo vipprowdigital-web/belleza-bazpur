@@ -57,7 +57,7 @@ const Footer = () => {
             <div>
               <h3 className="text-2xl font-bold tracking-tighter">
                 Belleza{" "}
-                <span className="text-accent italic">Beauty School</span>
+                <span className="text-accent normal">Beauty School</span>
               </h3>
 
               <p className="text-accent/60 text-[10px] uppercase tracking-[0.3em] font-bold mt-1">
@@ -264,7 +264,7 @@ export default Footer;
 //             <div>
 //               <h3 className="text-2xl font-bold tracking-tighter">
 //                 Belleza{" "}
-//                 <span className="text-accent italic">Beauty School</span>
+//                 <span className="text-accent normal">Beauty School</span>
 //               </h3>
 //               <p className="text-accent/60 text-[10px] uppercase tracking-[0.3em] font-bold mt-1">
 //                Bazpur Branch

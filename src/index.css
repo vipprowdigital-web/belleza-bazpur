@@ -7,7 +7,18 @@
    --color-light: #ffffff;
 }
 
+
+*,
+em,
+i {
+  font-style: normal !important;
+}
 /* BACKGROUND CLASSES */
+
+.font-serif {
+  font-style: normal !important;
+}
+
 .bg-primary {
   background-color: var(--color-primary);
 }
@@ -31,6 +42,17 @@
 
 .text-secondary {
   color: var(--color-secondary);
+}
+.font-premium {
+  font-family: "Montserrat", serif;
+}
+
+.font-main {
+  font-family: "Montserrat", sans-serif;
+}
+html,
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 .text-accent {

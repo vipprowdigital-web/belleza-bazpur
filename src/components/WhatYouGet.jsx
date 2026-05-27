@@ -20,7 +20,7 @@ const benefits = [
 
 const WhatYouGet = () => {
   return (
-    <section className="py-24 px-6 bg-light overflow-hidden">
+    <section className="py-8 px-6 bg-light overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
@@ -38,20 +38,13 @@ const WhatYouGet = () => {
 
             <div className="relative rounded-[3rem] overflow-hidden shadow-2xl">
               <img
-                src="/assets/images/pngtree-luxury-makeup-kit-with-eyeshadow-and-lipstick-isolated-on-transparent-background-png-image_20375109.png"
+                src="/assets/images/photo/WhatsApp Image 2026-05-13 at 4.24.01 PM.jpeg"
                 alt="Academy Environment"
-                className="w-full h-[420px] md:h-[600px] object-cover hover:scale-110 transition-transform duration-700"
+                className="w-full h-[420px] md:h-[500px] object-cover hover:scale-110 transition-transform duration-700"
               />
 
               {/* Overlay Badge */}
-              <div className="absolute top-8 left-8 bg-light/90 backdrop-blur-md px-6 py-2 rounded-2xl shadow-xl border border-light">
-                <div className="text-primary font-bold text-md">
-                  Premium Facility
-                </div>
-                <div className="text-secondary text-xs font-bold uppercase tracking-tighter">
-                  Bazpur, Uttarakhand
-                </div>
-              </div>
+              
             </div>
           </motion.div>
 
@@ -69,7 +62,7 @@ const WhatYouGet = () => {
 
             <h2 className="text-primary text-4xl md:text-5xl font-bold mb-8 tracking-tight">
               What You Get at{" "}
-              <span className="text-secondary italic font-serif">
+              <span className="text-secondary normal font-serif">
                 Belleza Bazpur
               </span>
             </h2>
@@ -153,7 +146,7 @@ export default WhatYouGet;
 //             </h4>
 //             <h2 className="text-primary text-4xl md:text-5xl font-bold mb-8 tracking-tight">
 //               What You Get at{" "}
-//               <span className="text-secondary italic font-serif">Belleza  Bazpur</span>
+//               <span className="text-secondary normal font-serif">Belleza  Bazpur</span>
 //             </h2>
 
 //             <p className="text-secondary font-semibold mb-10 text-lg leading-tight tracking-tight">
